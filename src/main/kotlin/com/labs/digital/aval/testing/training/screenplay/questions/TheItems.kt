@@ -15,6 +15,6 @@ class TheItems : Question<List<String>> {
     }
 
     companion object {
-        fun displayed() = TheItems()
+        fun displayed(): TheItems = TheItems()
     }
 }

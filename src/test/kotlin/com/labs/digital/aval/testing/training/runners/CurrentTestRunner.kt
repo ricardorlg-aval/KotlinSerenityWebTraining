@@ -7,9 +7,9 @@ import org.junit.runner.RunWith
 @RunWith(CucumberWithSerenity::class)
 @CucumberOptions(
         strict = true,
+        plugin = ["pretty"],
         features = ["src/test/resources/features"],
         tags = ["@current"],
         glue = ["com.labs.digital.aval.testing.training.features"]
 )
-class CurrentTestRunner {
-}
+class CurrentTestRunner

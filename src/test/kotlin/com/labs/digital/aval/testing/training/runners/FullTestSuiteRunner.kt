@@ -11,5 +11,4 @@ import org.junit.runner.RunWith
         features = ["src/test/resources/features"],
         glue = ["com.labs.digital.aval.testing.training.features"]
 )
-class FullTestSuiteRunner {
-}
+class FullTestSuiteRunner
