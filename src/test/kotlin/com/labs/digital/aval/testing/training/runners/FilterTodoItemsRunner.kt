@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 @CucumberOptions(
         strict = true,
         plugin = ["pretty"],
-        features = ["src/test/resources/features/maintain_my_todo_list/filtering_todos.feature"],
+        features = ["src/test/resources/features/maintainMyTodoList/filteringTodos.feature"],
         glue = ["com.labs.digital.aval.testing.training.features"]
 )
 class FilterTodoItemsRunner

@@ -23,6 +23,7 @@ open class Start(private val todoItems: List<String>, private val todoListDescri
 
     companion object {
         fun withAnEmptyTodoList(): Start = instrumented(Start::class.java, emptyList<String>(), "an empty todo list")
+
         fun withATodoListContaining(thingsToDo: List<String>): Start = instrumented(Start::class.java, thingsToDo, "a todo list containing ${thingsToDo.joinToString()}")
     }
 }

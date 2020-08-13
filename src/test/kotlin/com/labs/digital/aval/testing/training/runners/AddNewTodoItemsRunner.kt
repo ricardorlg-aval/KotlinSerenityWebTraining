@@ -8,7 +8,7 @@ import org.junit.runner.RunWith
 @CucumberOptions(
         strict = true,
         plugin = ["pretty"],
-        features = ["src/test/resources/features/record_todos/add_new_items_to_the_todo_list.feature"],
+        features = ["src/test/resources/features/recordTodos/addNewItemsToTheTodoList.feature"],
         glue = ["com.labs.digital.aval.testing.training.features"]
 )
 class AddNewTodoItemsRunner

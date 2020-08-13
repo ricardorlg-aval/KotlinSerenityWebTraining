@@ -6,16 +6,15 @@ import net.serenitybdd.screenplay.Task
 import net.serenitybdd.screenplay.Tasks.instrumented
 import net.serenitybdd.screenplay.actions.Enter
 import net.thucydides.core.annotations.Step
-import org.openqa.selenium.Keys
+import org.openqa.selenium.Keys.RETURN
 
 open class AddTodoItem(private val thingToDo: String) : Task {
     @Step("{0} adds a todo item called: #thingToDo")
     override fun <T : Actor> performAs(actor: T) {
         actor.attemptsTo(
-                Enter
-                        .theValue(thingToDo)
+                Enter.theValue(thingToDo)
                         .into(TodoList.WHAT_NEEDS_TO_BE_DONE)
-                        .thenHit(Keys.RETURN)
+                        .thenHit(RETURN)
         )
     }
 
